@@ -147,6 +147,11 @@ fabric.properties
  *.iml
  *.ipr
 
+/_pycache_/
+_pycache_/
+/__pycache__/
+__pycache__/
+
 # CMake
 
 # Mongo Explorer plugin
