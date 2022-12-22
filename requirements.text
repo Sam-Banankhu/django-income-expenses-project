@@ -1,0 +1,6 @@
+asgiref==3.6.0
+certifi @ file:///croot/certifi_1671487769961/work/certifi
+Django==4.1.4
+numpy==1.24.0
+psycopg2 @ file:///croot/psycopg2_1666817453215/work
+sqlparse==0.4.3
