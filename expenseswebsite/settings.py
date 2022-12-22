@@ -9,12 +9,19 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+# from cgitb import strong
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+
+# <strong> # Use load_env to trace the path of .env</strong>:
+load_dotenv('.env')
+
+# <strong># Get the values of the variables from .env using the os library</strong>:
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -76,10 +83,10 @@ WSGI_APPLICATION = "expenseswebsite.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "incomeexpensesdb",
-        "USER": 'pandas',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost'
+        "NAME": os.environ.get('DB_NAME'),
+        "USER": os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST')
 
     }
 }
