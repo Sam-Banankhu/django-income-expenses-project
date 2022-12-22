@@ -80,6 +80,7 @@ DATABASES = {
         "USER": 'pandas',
         'PASSWORD': 'admin',
         'HOST': 'localhost'
+
     }
 }
 
