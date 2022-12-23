@@ -14,6 +14,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
+# Configure Django App for Heroku.
+import django_heroku
+
+
 # <strong> # Use load_env to trace the path of .env</strong>:
 load_dotenv('.env')
 
@@ -130,6 +134,8 @@ STATIC_URL = "static/"
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "expenseswebsite/static")]
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+django_heroku.settings(locals())
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

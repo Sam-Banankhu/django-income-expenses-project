@@ -1,6 +1,13 @@
 asgiref==3.6.0
 certifi @ file:///croot/certifi_1671487769961/work/certifi
+click @ file:///tmp/build/80754af9/click_1646056706450/work
+dj-database-url==1.2.0
 Django==4.1.4
+django-dotenv==1.4.2
+django-heroku==0.3.1
+gunicorn==20.1.0
 numpy==1.24.0
 psycopg2 @ file:///croot/psycopg2_1666817453215/work
+python-dotenv @ file:///croot/python-dotenv_1669132557191/work
 sqlparse==0.4.3
+whitenoise==6.2.0
